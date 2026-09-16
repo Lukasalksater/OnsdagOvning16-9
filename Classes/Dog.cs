@@ -3,16 +3,13 @@ namespace OnsdagÖvning16_9.Classes
 {
     public class Dog : Animal 
     {
-        // Private Attributes 
-        private string Species { get; set; } = "Dog"; // Hardcoded the species because it can not be anything else
+        // Attributes 
 
-        // Attributes
-
+        // Private field for species, since all dogs are of the same species, we can hardcode it to "Dog"
+        private string Species { get; set; } = "Dog"; 
         public string Breed { get; set; }
 
-
-
-        // Getters, no setters for Species since it's a constant value for every subclass of dog
+        // Getter, no setters for Species since it's a constant value for every subclass of dog
 
         public string species 
         {
@@ -24,6 +21,7 @@ namespace OnsdagÖvning16_9.Classes
         {
             Breed = breed;
         }
+
         // Implement abstract methods
         public override void MakeSound()
         {

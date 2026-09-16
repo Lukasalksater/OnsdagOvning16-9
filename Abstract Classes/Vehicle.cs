@@ -1,5 +1,4 @@
 ﻿using OnsdagÖvning16_9.Interfaces;
-
 namespace OnsdagÖvning16_9.Abstract_Classes
 {
     public abstract class Vehicle : IBasicInfo
