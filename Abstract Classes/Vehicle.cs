@@ -23,9 +23,9 @@ namespace OnsdagÖvning16_9.Abstract_Classes
 
         // Abstract method
 
-        public abstract void Drive();
+        public abstract void Drive(bool isUnique);
 
-        public abstract void Brake();
+        public abstract void Brake(bool isUnique);
 
         public abstract void DisplayInfo();
 

@@ -21,14 +21,24 @@ namespace OnsdagÖvning16_9.Classes
 
         // Implement abstract methods
 
-        public override void Drive()
+        public override void Drive(bool isUnique)
         {
-            Console.WriteLine($"The {Make} {Model} is driving.");
+            if (isUnique)
+            {
+                Console.WriteLine($"The {Make} {Model} is driving uniquely.");
+            }
+            else
+                Console.WriteLine($"The {Make} {Model} is driving.");
         }
 
-        public override void Brake()
+        public override void Brake(bool isUnique)
         {
-            Console.WriteLine($"The {Make} {Model} is braking.");
+            if (isUnique)
+            {
+                Console.WriteLine($"The {Make} {Model} is braking uniquely.");
+            }
+            else
+                Console.WriteLine($"The {Make} {Model} is braking.");
         }
 
         public override void DisplayInfo()
