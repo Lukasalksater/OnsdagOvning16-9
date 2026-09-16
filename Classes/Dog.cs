@@ -23,13 +23,35 @@ namespace OnsdagÖvning16_9.Classes
         }
 
         // Implement abstract methods
-        public override void MakeSound()
+        public override void MakeSound(bool isUnique)
         {
-            Console.WriteLine("Woof!");
+            if (isUnique)
+            {
+                if (Breed.ToLower() == "husky") // checks if the breed is husky, if so, it will make a unique howl sound
+                {
+                    Console.WriteLine("Awoo! (Unique howl)");
+                }
+                else
+                    Console.WriteLine("Woof! (Unique bark)");
+            }
+            else
+            {
+                Console.WriteLine("Woof!");
+            }
         }
-        public override void Move()
+        public override void Move(bool isUnique)
         {
-            Console.WriteLine($"The {Breed} runs on its {NumberOfLegs} legs.");
+            if (isUnique)
+            {
+                if (Breed.ToLower() == "husky") // checks if the breed is husky, if so, it will make a unique run sound
+                {
+                    Console.WriteLine("The Husky runs through the snow with ease!");
+                }
+                else
+                    Console.WriteLine($"The {Breed} runs swiftly.");
+            }
+            else
+                Console.WriteLine($"The {Breed} runs on its {NumberOfLegs} legs.");
         }
 
         public override void DisplayInfo()

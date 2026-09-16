@@ -21,9 +21,9 @@ namespace OnsdagÖvning16_9.Abstract_Classes
 
         // Abstract method
 
-        public abstract void MakeSound();
+        public abstract void MakeSound(bool isUnique);
 
-        public abstract void Move();
+        public abstract void Move(bool isUnique);
 
         // Abstract methods from interface IBasicInfo
         public abstract void DisplayInfo();
